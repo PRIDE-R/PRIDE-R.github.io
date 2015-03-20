@@ -1,7 +1,7 @@
 PRIDE-R
 ======
 
-A collection of R tools to access the European Bioinformatics Institute [PRIDE project](http://www.ebi.ac.uk/pride) resources, together with different data products based on them.  
+A collection of R tools to access the European Bioinformatics Institute [PRIDE project](http://www.ebi.ac.uk/pride) resources, including [PRIDE Archive](http://www.ebi.ac.uk/pride/ws/archive) and [PRIDE Cluster](http://wwwdev.ebi.ac.uk/pride/ws/cluster) web services, together with different data products based on them.  
 
 Currently, the following projects are ongoing:  
 
