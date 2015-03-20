@@ -5,7 +5,7 @@ A collection of R tools to access the European Bioinformatics Institute [PRIDE p
 
 Currently, the following projects are ongoing:  
 
-* [prideR](https://github.com/PRIDE-R/prideR): an R package to access PRIDE Archive and PRIDE Cluster  
+* [prideR](http://pride-r.github.io/prideR): an R package to access PRIDE Archive and PRIDE Cluster  
 
 ### About us   
 
