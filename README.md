@@ -1,84 +1,11 @@
-[![Build Status](https://travis-ci.org/PRIDE-R/prideR.svg)](https://travis-ci.org/PRIDE-R/prideR)
-[prideR](https://github.com/PRIDE-R/prideR)
+PRIDE-R
 ======
 
-An [R package](https://github.com/PRIDE-R/prideR) to obtain data from the EMBL-EBI Proteomics Repository Identifications Database ([PRIDE Archive](http://www.ebi.ac.uk/pride/archive/) and [PRIDE Cluster](http://wwwdev.ebi.ac.uk/pride/cluster)). It uses its RESTful Web Services at [PRIDE Archive WS](http://www.ebi.ac.uk/pride/ws/archive/) and [PRIDE Cluster WS](http://wwwdev.ebi.ac.uk/pride/ws/archive) for that purpose.  
+A collection of R tools to access the European Bioinformatics Institute [PRIDE project](http://www.ebi.ac.uk/pride) resources, together with different data products based on them.  
 
-Currently, the following domain entities are supported:  
+Currently, the following projects are ongoing:  
 
-* Projects as S4 objects, including methods to get them from PRIDE by accession and `as.data.frame`  
-* Assays as S4 objects, including methods to get them from PRIDE by accession and `as.data.frame`  
-* Files as S4 objects, including methods to get them from PRIDE by project and assay accession and `as.data.frame`  
-* Protein identifications associated with a project, as S4 objects, including methods to get them from PRIDE by project accession and `as.data.frame`  
-* PSM identifications associated with a project, as S4 objects, including methods to get them from PRIDE by project accession and `as.data.frame`  
-* PRIDE Cluster ClusterSummary, as S4 objects and as `as.data.frame`.  
-
-### Installation  
-
-First, we need to install `devtools`:  
-
-    install.packages(devtools)
-    library(devtools)
-   
-Then we just call  
-
-    install_github("PRIDE-R/prideR")
-
-### Examples  
-
-#### PRIDE Archive  
-
-Get project `PXD000001` summary:  
-
-    get.ProjectSummary("PXD000001")
-
-Search for at most 20 projects by term `blood`. The results are returned as a `list` of `ProjectSummary` objects:  
-
-    search.list.ProjectSummary("blood",20)
-
-Get them as a `data.frame`:  
-
-    list.to.data.frame(search.list.ProjectSummary("blood",20))
-
-Get the first 50 Proteins for project `PXD000001` as a list of `ProteinDetail` objects:  
-
-    protein.list(list.ProteinDetailList("PXD000001", 0, 50))
-
-Or as a `data.frame`:  
-
-    as.data.frame(list.ProteinDetailList("PXD000001",0, 50))
-
-Plot some counts:  
-
-    plot(list.ProteinDetailList("PXD000001",0, 50))
-
-Get 5 PSMs for project `PXD000001` as a list of `PsmDetail` objects:  
-
-    get.list.PsmDetail("PXD000001", 5)
-
-There are also count methods for each of the PRIDE Archive entitites.  
-
-#### PRIDE Cluster  
-
-Get page 0 with a size of 20 clusters for peptide sequence *ELISN*:  
-
-    search.ClusterSearchResults("elisn", 0, 20)
-
-As a data frame:  
-
-    as.data.frame(search.ClusterSearchResults("elisn", 1, 20))
-
-Plot results:
-
-    plotresults(search.ClusterSearchResults("elisn", 0, 20))
-
-### Future Works  
-
-Some things to be done, sooner than later:  
-
-- Check mandatory parameters  
-- Deal with `SpectrumDetail` entities when available  
-
+* [prideR](https://github.com/PRIDE-R/prideR): an R package to access PRIDE Archive and PRIDE Cluster  
 
 ### About us   
 
