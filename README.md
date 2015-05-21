@@ -7,6 +7,7 @@ Currently, the following projects are ongoing:
 
 * [prideR](http://pride-r.github.io/prideR): an R package to access PRIDE Archive and PRIDE Cluster  
 * [PRIDE Archive trends](http://pride-r.github.io/archive-anual-trends): Exploratory data analysis and visualisation of PRIDE Archive submissions trends over the years.   
+* [prideRcompare]](http://pride-r.github.io/prideRcompare): Compare, distance, and clustering for prideR projects.   
 
 ### About us   
 
