@@ -7,7 +7,7 @@ Currently, the following projects are ongoing:
 
 * [prideR](http://pride-r.github.io/prideR): an R package to access PRIDE Archive and PRIDE Cluster  
 * [PRIDE Archive trends](http://pride-r.github.io/archive-anual-trends): Exploratory data analysis and visualisation of PRIDE Archive submissions trends over the years.   
-* [PRIDE Archive project tagger]: The PRIDE Archive uses a system of tags to classify datasets. So far these tags are manually assigned by curators. By trying to build a model that predict tags, we want to find out what are behind those tags in terms of dataset metadata and natuarl language description.  
+* [PRIDE Archive project tagger](http://pride-r.github.io/project-tagger/): The PRIDE Archive uses a system of tags to classify datasets. So far these tags are manually assigned by curators. By trying to build a model that predict tags, we want to find out what are behind those tags in terms of dataset metadata and natuarl language description.  
 * [prideRcompare](http://pride-r.github.io/prideRcompare): Compare, distance, and clustering for prideR projects.   
 
 ### About us   
